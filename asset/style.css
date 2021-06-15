@@ -1,0 +1,386 @@
+/* reset css */
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 80px;
+    display: flex;
+    margin: 0 20px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.header-logo img{
+    height: 80px;
+}
+
+.header-logo:hover{
+    cursor: pointer;
+}
+
+.header-navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.header-navbar_item{
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.4s;
+}
+
+.header-navbar_sub_item{
+    transform: translateY(-10%);
+    position: absolute;
+    width: 100px;
+    background-color: #fff;
+    width: 140px;
+    left: -5px;
+    opacity: 0;
+    transition: 0.6s;
+    z-index: 1;
+    visibility: hidden;
+    padding: 0px 15px;
+    left: -20px;
+}
+
+.header-navbar_sub_item li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+
+}
+
+.header-navbar_sub_item li a:hover{
+    color: #3fd0d4;
+    transition: 0.4s;
+
+}
+
+.header-navbar_sub_item ul{
+    list-style-type: none;
+}
+
+.header-navbar_item:hover{
+    cursor: pointer;
+    color: #3fd0d4;
+    transition: 0.4s;
+}
+
+
+.header-navbar_item:hover .header-navbar_sub_item{
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.contain-one-clip video{
+    width: 100%;
+}
+
+.contain-one-clip{
+    position: relative;
+}
+
+.contain-one-clip-main{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 54, 54, 0.466);
+    text-align: center;
+}
+
+.contain-one-clip-main-text{
+    margin-top: 25px;
+    animation: textConteinOnClip ease 10s infinite;
+}
+
+@keyframes textConteinOnClip{
+    from{
+        opacity: 0;
+        transform: translateY(400%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contain-one-clip-main-text-list{
+    top: 28%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.text1{
+    font-size: 48px;
+    font-family: cursive;
+    color: #fff;
+    text-shadow: 1px 4px green;
+}
+
+.text2{
+    font-size: 80px;
+    font-weight: 700;
+    text-shadow: 1px 2px orange;
+    color: #fff;
+}
+
+.text3{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-shadow: 1px 1px rgb(251, 238, 56);
+    color: #fff;
+}
+
+
+
+
+
+.contain-two-diary-header{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0px;
+    font-family: cursive;
+    color: rgb(255, 223, 223);
+    text-shadow: 2px 2px rgb(84, 255, 135);
+    background-color: #3fd0d4;
+}
+
+.contain-two-diary-main{
+    z-index: 2;
+}
+
+.photos-of-diary{
+    height: 200px;
+    width: 100%;
+
+}
+
+.text-of-diary{
+    text-align: center;
+    background-color: rgb(107, 250, 255);
+    height: 130px;
+    margin: auto;
+}
+
+.text-of-diary-header{
+    font-size: 24px;
+    padding: 12px 0px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 2px green;
+}
+
+.text-of-diary-sub{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px rgba(255, 166, 0, 0.589);
+    transition: 0.7s;
+    line-height: 20px;
+
+}
+
+.footer-of-diary{
+    width: 100%;
+    text-align: center;
+    background-color: #3cff59;
+    transition: 0.7s;
+    color: #ff990087;
+}
+
+.Photos-of-diary{
+    transition: 0.6s;
+}
+
+.Photos-of-diary:hover{
+    margin-top: -15px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.Photos-of-diary:hover .text-of-diary{
+    background-color: black;
+    transition: 0.7s;
+}
+
+.Photos-of-diary:hover .footer-of-diary{
+    background-color: black;
+    transition: 0.7s;
+}
+
+
+.contain-three-text-header{
+    text-align: center;
+}
+
+.contain-three-text{
+    font-size: 23px;
+    text-align: center;
+    margin: 30px;
+    font-weight: 700;
+    text-shadow: 1px 2px chartreuse;
+}
+
+.four-top-review{
+    width: 100%;
+    height: 1000px;
+    background-image: url(./image_save/four-top-review.jpg);
+    background-size: cover;
+}
+
+.four-top-review-header{
+    text-align: center;
+    font-size: 24px;
+    padding: 100px;
+    color: #fff;
+}
+
+.four-top-review-header1{
+    font-size: 100px;
+    font-family: cursive;
+    padding: 50px;
+}
+
+.four-top-review-header1-sub{
+    letter-spacing: 3px;
+}
+
+.four-reviewer-top{
+    display: flex;
+}
+
+.four-reviewer-form{
+    width: 30.3333%;
+    margin: 50px;
+    display: flex;
+    background-color: rgba(31, 25, 25, 0.479);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.four-reviewer-form-image{
+    border-radius: 50px;
+    overflow: hidden;
+    height: 160px;
+    width: 160px;
+}
+
+.four-reviewer-form-text{
+    text-align: center;
+}
+
+.four-reviewer-form-text-name{
+    font-weight: 700;
+    margin: 10px 0px;
+    color: #fff;
+    text-shadow: 1px 2px green;
+}
+
+.four-reviewer-form-text-comment{
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    margin: 12px;
+}
+
+.none{
+    display: none;
+}
+
+.four-reviewer-btn{
+    text-align: center;
+    color: #fff;
+}
+
+.btn1.active{
+    color: aqua;
+    background-color: aqua;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+.btn1{
+    font-size: 15px;
+    background-color: rgba(0, 255, 255, 0.644);
+    border-radius: 50%;
+    color: rgba(0, 255, 255, 0.424);
+}
+
+.five-image-text{
+    text-align: center;
+}
+
+.five-image-text-header{
+    font-size: 35px;
+    margin: 40px;
+    font-family: cursive;
+    text-shadow: 1px 2px green;
+}
+
+.five-image-text-contain{
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 3px 2px green;
+    color: #fff;
+}
+
+.five-image-text-sub{
+    margin: 30px;
+    letter-spacing: 2px;
+}
+
+.five-image-image{
+    display: flex;
+}
+
+.five-image-image-circle{
+    width: 33.33%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 30px;
+    transition: 0.5s;
+    height: 600px;
+}
+
+.five-image-image-circle img{
+    transition: 0.6s;
+}
+
+.five-image-image-circle:hover img{
+    -webkit-transform: scale(1.2); transform: scale(1.2); 
+    transition: 0.5s;
+}
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: #fff;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-2-heading{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media all and (max-width: 320px){
+    .none-style{
+        display: none;
+    }
+}
